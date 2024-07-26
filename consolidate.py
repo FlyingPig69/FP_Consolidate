@@ -1,6 +1,6 @@
 # FP_Consolidate
 # Consolidate ergo boxes
-# Requires the wallet to be set up on an indexed ergo node
+# Requires the wallet to be set up on a node you control and have the API key to.
 
 import requests
 from functions import get_boxes, tx_assembler
