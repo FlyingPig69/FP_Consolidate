@@ -12,7 +12,7 @@ my_address = "" # your address which exists on the indexed node
 node_api_key = "" #NODE API KEY
 
 no_boxes = 1000 # no of boxes to consolidate at a time
-mining_fee = 0.001 #mininng fee
+mining_fee = 0.001 #mining fee
 boxes_threshold = 50 # only consolidate if there are more boxes than this value
 
 interval = 5 # seconds to wait between checking boxes again, if more boxes need to be consolidated will chain the tx
