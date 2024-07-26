@@ -27,7 +27,7 @@ headers = {
 }
 while True:
     #get my boxes
-    box_ids = get_boxes.get_my_boxes(node_url, my_address, no_boxes)
+    box_ids = get_boxes.get_my_boxes(node_url, my_address, no_boxes,headers)
     number_of_boxes = len(box_ids)
     print(time.strftime("%Y-%m-%d %H:%M:%S"),"Unspent boxes:", number_of_boxes)
     if number_of_boxes > boxes_threshold:
