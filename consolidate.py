@@ -31,7 +31,6 @@ while True:
     number_of_boxes = len(box_ids)
     print(time.strftime("%Y-%m-%d %H:%M:%S"),"Unspent boxes:", number_of_boxes)
     if number_of_boxes > boxes_threshold:
-        print("Converting", number_of_boxes, "boxes to binary....")
         print("Getting box values....")
         total_value = 0
         for box in box_ids:
@@ -40,6 +39,7 @@ while True:
         print("Total value is:", value/1000000000, "ERG")
 
         value_to_send = value - mining_fee
+        print("Converting", number_of_boxes, "boxes to binary....")
         box_bytes = get_boxes.box_to_byte(box_ids, node_url)
 
         print("Assembling transaction")
