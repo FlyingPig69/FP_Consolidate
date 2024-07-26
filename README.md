@@ -1,2 +1,2 @@
 Consolidate unspent boxes
-Requires a wallet on a fully synced indexed node
+Requires a wallet on a node you have the API key to
