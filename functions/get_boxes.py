@@ -13,7 +13,7 @@ http.mount("https://", adapter)
 http.mount("http://", adapter)
 wallet_unspent = "/wallet/boxes/unspent"
 
-def get_my_boxes(node_url,address,limit,headers): # get my boxes and LP pool boxes
+def get_my_boxes(node_url,address,limit,headers): # get my boxes
     #print(address)
     params = {
         "minConfirmations": -1, #-1 includes mempool
